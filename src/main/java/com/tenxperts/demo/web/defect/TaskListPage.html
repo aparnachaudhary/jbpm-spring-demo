@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:extend>
+	<div wicket:id="modal"></div>
+
+	<h2><span>Defects for Review</span></h2>
+	<table wicket:id="reviewDefectsContainer">
+		<tr align="center" bgcolor="gray" style="font: bold;">
+			<td>Description</td>
+			<td>Resolution</td>
+			<td>Created Date</td>
+			<td>Created By</td>
+			<td>Assigned To</td>
+			<td>Status</td>
+			<td>Actions</td>
+		</tr>
+
+		<tr wicket:id="reviewDefect">
+			<td wicket:id="description">Description</td>
+			<td wicket:id="resolution">resolution</td>
+			<td wicket:id="createdDate">createdDate</td>
+			<td wicket:id="createdBy">createdBy</td>
+			<td wicket:id="assignedTo">assignedTo</td>
+			<td wicket:id="status">status</td>
+			<td><a wicket:id="review">Review</a></td>
+		</tr>
+	</table>
+	<br />
+	<br />
+	<h2><span>Defects for Resolution</span></h2>
+	<table wicket:id="resolveDefectsContainer">
+		<tr align="center" bgcolor="gray" style="font: bold;">
+			<td>Description</td>
+			<td>Resolution</td>
+			<td>Created Date</td>
+			<td>Created By</td>
+			<td>Assigned To</td>
+			<td>Status</td>
+			<td>Actions</td>
+		</tr>
+
+
+		<tr wicket:id="resolveDefect">
+			<td wicket:id="description">Description</td>
+			<td wicket:id="resolution">resolution</td>
+			<td wicket:id="createdDate">createdDate</td>
+			<td wicket:id="createdBy">createdBy</td>
+			<td wicket:id="assignedTo">assignedTo</td>
+			<td wicket:id="status">status</td>
+			<td><a wicket:id="resolve">Resolve</a></td>
+		</tr>
+	</table>
+
+	<br />
+	<br />
+	<h2><span>Defects for Closure</span></h2>
+	<table wicket:id="closeDefectsContainer">
+		<tr align="center" bgcolor="gray" style="font: bold;">
+			<td>Description</td>
+			<td>Resolution</td>
+			<td>Created Date</td>
+			<td>Created By</td>
+			<td>Assigned To</td>
+			<td>Status</td>
+			<td>Actions</td>
+		</tr>
+
+
+		<tr wicket:id="closeDefect">
+			<td wicket:id="description">Description</td>
+			<td wicket:id="resolution">resolution</td>
+			<td wicket:id="createdDate">createdDate</td>
+			<td wicket:id="createdBy">createdBy</td>
+			<td wicket:id="assignedTo">assignedTo</td>
+			<td wicket:id="status">status</td>
+			<td><a wicket:id="close">Close Defect</a></td>
+		</tr>
+	</table>
+
+</wicket:extend>
+</html>

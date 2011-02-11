@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:extend>
+	<div wicket:id="modal"></div>
+
+	<table border="1" wicket:id="defectsContainer">
+		<tr align="center">
+			<td>Description</td>
+			<td>resolution</td>
+			<td>createdDate</td>
+			<td>createdBy</td>
+			<td>assignedTo</td>
+			<td>status</td>
+			<td colspan=3>Actions</td>
+		</tr>
+
+		<tr wicket:id="defect">
+			<td wicket:id="description">Description</td>
+			<td wicket:id="resolution">resolution</td>
+			<td wicket:id="createdDate">createdDate</td>
+			<td wicket:id="createdBy">createdBy</td>
+			<td wicket:id="assignedTo">assignedTo</td>
+			<td wicket:id="status">status</td>
+			<td><a wicket:id="review">Review</a></td>
+			<td><a wicket:id="resolve">Resolve</a></td>
+			<td><a wicket:id="close">Close</a></td>
+		</tr>
+	</table>
+</wicket:extend>
+</html>

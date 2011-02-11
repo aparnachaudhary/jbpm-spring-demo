@@ -1,0 +1,35 @@
+<html>
+<head>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<style>
+td {
+	white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+<div class="titleDiv">Defect Tracking Application</div>
+<span wicket:id="feedback" />
+<form wicket:id="login">
+<table width="60%">
+	<tr>
+		<td colspan="2">Wicket jBPM Login</td>
+	</tr>
+	<tr>
+		<td>Username:</td>
+		<td><input type="text" wicket:id="username" /></td>
+	</tr>
+	<tr>
+		<td>Password:</td>
+		<td><input type="password" wicket:id="password" /></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+		<button wicket:id="submit">Submit</button>
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

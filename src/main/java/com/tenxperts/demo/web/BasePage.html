@@ -1,0 +1,26 @@
+<html>
+<head>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<style>
+td {
+	white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+<div class="titleDiv">Defect Tracking Application</div>
+
+<table border="1" width="100%">
+	<tr>
+		<td valign="top">Welcome,&nbsp;<span wicket:id="username" /><br /><br />
+		<a wicket:id="list">List Defects</a> <br />
+		<a wicket:id="create">Create Defect</a> <br /><br /><br />
+		<a href="#" wicket:id="logout">Logout</a></td>
+		<td>
+		<h1><span wicket:id="pageTitle">[page title]</span></h1>
+		<wicket:child /></td>
+	</tr>
+</table>
+</body>
+</html>

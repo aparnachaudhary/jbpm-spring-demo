@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="DefectTracking" xmlns="http://jbpm.org/4.4/jpdl">
+	<start g="263,-4,48,48" name="start1">
+		<transition g="-88,-18" name="toReviewDefect" to="reviewDefect" />
+	</start>
+
+	<task assignee="#{assignee}" g="231,90,113,52" name="reviewDefect">
+		<transition g="-68,-18" name="toResolveDefect" to="resolveDefect" />
+	</task>
+
+	<task g="207,217,169,52" name="resolveDefect">
+		<assignment-handler
+			class="com.tenxperts.demo.handler.DefectAssignmentHandler">
+		</assignment-handler>
+		<transition g="-81,-18" name="toCloseDefect" to="closeDefect" />
+	</task>
+
+	<state g="218,326,153,52" name="closeDefect">
+		<transition g="-47,-18" name="toEnd" to="end" />
+	</state>
+
+	<end g="270,414,48,48" name="end" />
+</process>
