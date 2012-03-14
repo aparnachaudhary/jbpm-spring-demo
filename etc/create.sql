@@ -1,6 +1,6 @@
--- ----------------------------
+-- -----------------------------
 --  Table structure for "users"
--- ----------------------------
+-- -----------------------------
 DROP TABLE IF EXISTS "users";
 CREATE TABLE "users" (
 	"id" int8 NOT NULL DEFAULT NULL,
